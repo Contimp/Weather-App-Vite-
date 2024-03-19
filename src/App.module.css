@@ -1,0 +1,42 @@
+.app {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.bkg {
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(10px);
+  background-color: #ffffff15;
+}
+
+.container {
+  width: 83vw;
+  height: 85vh;
+  margin: 8vh 8vw;
+  top: 0;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 63vh 22vh;
+}
+
+.citiesContainer {
+  display: flex;
+  height: 22vh;
+  backdrop-filter: blur(10px);
+  background-color: #fefefe4c;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+
+.app,
+.container {
+  position: absolute;
+  background-image: url("./assets/atardecerpalmeras.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 1.5rem;
+}
