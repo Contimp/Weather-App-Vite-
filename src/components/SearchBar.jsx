@@ -4,9 +4,11 @@ import { FaSearch } from "react-icons/fa";
 
 export default function SearchBar({ onSearch }) {
   // acá va tu código
-  const handleOnSearch = () =>
-    onSearch(document.getElementById("searchInput").value);
-
+  const handleOnSearch = () => {
+    const input = document.getElementById("searchInput");
+    onSearch(input.value);
+    input.value = "";
+  };
   return (
     <div>
       <input

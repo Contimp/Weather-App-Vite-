@@ -2,16 +2,16 @@ import React from "react";
 import Card from "./Card.jsx";
 import style from "./Cards.module.css";
 
-export default function Cards(props) {
+export default function Cards({ cities, onClose }) {
   return (
     <div className={style.container}>
-      {props.cities.map((c) => (
+      {cities.map((c) => (
         <Card
-          max={c.main.temp_max}
-          min={c.main.temp_min}
+          max={c.max}
+          min={c.min}
           name={c.name}
-          img={c.weather[0].icon}
-          onClose={() => alert(c.name)}
+          img={c.img}
+          onClose={() => onClose(c.id)}
           key={c.id}
           id={c.id}
         />
