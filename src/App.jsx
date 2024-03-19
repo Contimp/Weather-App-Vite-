@@ -52,14 +52,15 @@ function App() {
         </div>
         <div className={styles.citiesContainer}>
           <div>
-            <Card
-              principal
-              min={Cairns.main.temp_min}
-              max={Cairns.main.temp_max}
-              name={Cairns.name}
-              img={Cairns.weather[0].icon}
-              onClose={() => alert(Cairns.name)}
-            />
+            {data.length > 0 && (
+              <Card
+                principal
+                min={data[data.length - 1].min}
+                max={data[data.length - 1].max}
+                name={data[data.length - 1].name}
+                img={data[data.length - 1].icon}
+              />
+            )}
           </div>
           <div>
             <Cards cities={data} onClose={handleOnClose} />
