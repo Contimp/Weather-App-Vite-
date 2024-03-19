@@ -2,15 +2,20 @@ import React from "react";
 import style from "./SearchBar.module.css";
 import { FaSearch } from "react-icons/fa";
 
-export default function SearchBar(props) {
+export default function SearchBar({ onSearch }) {
   // acá va tu código
+  const handleOnSearch = () =>
+    onSearch(document.getElementById("searchInput").value);
+
   return (
     <div>
-      <input className={style.input} type="text" placeholder="City..." />
-      <button
-        className={style.button}
-        onClick={() => props.onSearch("Buscando...")}
-      >
+      <input
+        id="searchInput"
+        placeholder="Add City..."
+        className={style.input}
+        type="text"
+      />
+      <button className={style.button} onClick={handleOnSearch}>
         <FaSearch />
       </button>
     </div>
