@@ -1,6 +1,9 @@
 import React from "react";
 import style from "./SearchBar.module.css";
 import { FaSearch } from "react-icons/fa";
+import { GrRevert } from "react-icons/gr";
+
+import { Link } from "react-router-dom";
 
 export default function SearchBar({ onSearch }) {
   // acá va tu código
@@ -14,6 +17,10 @@ export default function SearchBar({ onSearch }) {
     onSearch(search);
     setSearch("");
   };
+  // const back = () => {
+  //   window.history.back();
+  // };
+
   return (
     <div>
       <input
@@ -30,6 +37,11 @@ export default function SearchBar({ onSearch }) {
       <button className={style.button} onClick={handleOnSearch}>
         <FaSearch />
       </button>
+      <Link to="/">
+        <button className={style.button}>
+          <GrRevert />
+        </button>
+      </Link>
     </div>
   );
 }
