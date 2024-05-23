@@ -9,6 +9,7 @@
   height: 98%;
   color: #ffffff;
 }
+
 .principal {
   display: flex;
   width: 320px;
@@ -20,18 +21,12 @@ a {
   text-decoration: none;
 }
 
+h4 {
+  color: #ffffff;
+}
+
 h4:hover {
   color: rgba(255, 255, 255, 0.598);
-}
-
-.principal > button {
-  display: none;
-}
-
-.principal > section {
-  margin-top: 0;
-  overflow: hidden;
-  align-items: center;
 }
 
 img {
@@ -49,7 +44,13 @@ img {
   display: flex;
   justify-content: center;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 0;
+}
+
+.principal > section {
+  margin-top: 0;
+  overflow: hidden;
+  align-items: center;
 }
 
 .temp {
@@ -80,4 +81,8 @@ img {
   background-color: rgb(129, 126, 126);
   color: white;
   border: solid 1px rgba(0, 0, 0, 0.249);
+}
+
+.principal > button {
+  display: none;
 }

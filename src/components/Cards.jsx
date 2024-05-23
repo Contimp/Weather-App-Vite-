@@ -2,7 +2,7 @@ import React from "react";
 import Card from "./Card.jsx";
 import style from "./Cards.module.css";
 
-export default function Cards({ cities, onClose }) {
+export default function Cards({ cities, handleOnClose }) {
   return (
     <div className={style.container}>
       {cities.map((c) => (
@@ -12,7 +12,7 @@ export default function Cards({ cities, onClose }) {
           min={c.min}
           name={c.name}
           img={c.img}
-          onClose={() => onClose(c.id)}
+          OnClose={() => handleOnClose(c.id)}
           key={c.id}
         />
       ))}
