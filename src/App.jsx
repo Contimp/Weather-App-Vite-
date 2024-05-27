@@ -15,7 +15,7 @@ export default function App() {
       alert("You can't add more cities");
     } else {
       fetch(
-        `http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${apikey}&units=metric`
+        `https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${apikey}&units=metric`
       )
         .then((r) => r.json())
         .then((recurso) => {
