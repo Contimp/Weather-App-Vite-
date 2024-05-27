@@ -37,3 +37,22 @@
   background-color: rgb(129, 126, 126);
   color: white;
 }
+
+/* Laptop Screen */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .input {
+    margin-left: 570px;
+  }
+}
+/* Tablet Screen */
+@media screen and (min-width: 425px) and (max-width: 768px) {
+  .input {
+    margin-left: 360px;
+  }
+}
+/* Mobile Screen */
+@media screen and (max-width: 425px) {
+  .input {
+    margin-left: 70px;
+  }
+}

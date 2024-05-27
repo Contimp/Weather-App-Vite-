@@ -49,3 +49,45 @@ h2 {
   background-color: rgb(129, 126, 126);
   color: white;
 }
+
+/* Laptop Screen */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    margin: 12vh 26vw;
+    height: 70vh;
+    width: 45vw;
+  }
+}
+/* Tablet Screen */
+@media screen and (min-width: 425px) and (max-width: 768px) {
+  .container {
+    margin: 12vh 24vw;
+    height: 70vh;
+    width: 55vw;
+  }
+}
+/* Mobile Screen */
+@media screen and (max-width: 425px) {
+  .container {
+    margin: 4vh 24svw;
+    margin-top: 35px;
+    height: 39vh;
+    width: 50vw;
+  }
+  h2 {
+    margin-top: 0;
+    font-size: 35px;
+  }
+
+  .info {
+    margin-top: 12px;
+    font-size: 16px;
+  }
+
+  .button {
+    width: 25px;
+    height: 25px;
+    font-size: 0.8rem;
+    margin-top: 25px;
+  }
+}

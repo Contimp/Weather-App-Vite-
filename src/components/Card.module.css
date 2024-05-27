@@ -15,6 +15,14 @@
   width: 320px;
   font-size: 23px;
   margin-top: 0;
+
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgb(184, 181, 181);
+  border-radius: 10px;
+  margin-left: 20px;
+  height: 98%;
+  color: #ffffff;
 }
 
 a {
@@ -44,13 +52,17 @@ img {
   display: flex;
   justify-content: center;
   text-align: center;
-  margin-top: 0;
+  margin-top: 14px;
 }
 
 .principal > section {
   margin-top: 0;
   overflow: hidden;
   align-items: center;
+
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 .temp {
@@ -85,4 +97,20 @@ img {
 
 .principal > button {
   display: none;
+}
+
+/* Laptop Screen */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .principal {
+    display: none;
+  }
+}
+/* Tablet Screen */
+@media screen and (min-width: 425px) and (max-width: 768px) {
+  .principal {
+    display: none;
+  }
+}
+/* Mobile Screen */
+@media screen and (max-width: 425px) {
 }
