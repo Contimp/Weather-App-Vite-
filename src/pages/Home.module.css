@@ -63,10 +63,10 @@
     display: none;
   }
   .container {
-    height: 104vh;
+    height: 114vh;
     background-size: 1800px;
   }
   .citiesContainer {
-    height: 22vh;
+    height: 52vh;
   }
 }
