@@ -59,11 +59,14 @@
   .home {
     background-image: none;
   }
+  .bkg {
+    display: none;
+  }
   .container {
-    height: 1105vh;
+    height: 104vh;
     background-size: 1800px;
   }
   .citiesContainer {
-    height: 82vh;
+    height: 22vh;
   }
 }
