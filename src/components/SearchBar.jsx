@@ -22,7 +22,7 @@ export default function SearchBar({ onSearch }) {
   // };
 
   return (
-    <div>
+    <div className={style.searchBarContainer}>
       <input
         id="searchInput"
         placeholder="Add City..."
@@ -37,11 +37,6 @@ export default function SearchBar({ onSearch }) {
       <button className={style.button} onClick={handleOnSearch}>
         <FaSearch />
       </button>
-      {/* <Link to="/"> */}
-      {/* <button className={style.button}>
-        <GrRevert />
-      </button> */}
-      {/* </Link> */}
     </div>
   );
 }

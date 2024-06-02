@@ -55,4 +55,7 @@
   .input {
     margin-left: 70px;
   }
+  .searchBarContainer {
+    height: 20%;
+  }
 }

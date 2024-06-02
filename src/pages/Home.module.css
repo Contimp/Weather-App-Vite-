@@ -49,4 +49,21 @@
 }
 /* Mobile Screen */
 @media screen and (max-width: 425px) {
+  /* .citiesContainer {
+    height: 92vh;
+  }
+  .container {
+    background-size: 1000px;
+  } */
+
+  .home {
+    background-image: none;
+  }
+  .container {
+    height: 1300px;
+    background-size: 1200px;
+  }
+  .citiesContainer {
+    height: 150%;
+  }
 }
