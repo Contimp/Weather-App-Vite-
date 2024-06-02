@@ -22,7 +22,7 @@ export default function SearchBar({ onSearch }) {
   // };
 
   return (
-    <div className={style.searchBarContainer}>
+    <div>
       <input
         id="searchInput"
         placeholder="Add City..."
