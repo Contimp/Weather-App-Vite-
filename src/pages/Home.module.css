@@ -61,9 +61,9 @@
   }
   .container {
     height: 1105vh;
-    background-size: 2000px;
+    background-size: 1900px;
   }
   .citiesContainer {
-    height: 0;
+    height: 82vh;
   }
 }
