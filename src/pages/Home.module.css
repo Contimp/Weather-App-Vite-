@@ -25,7 +25,7 @@
 
 .citiesContainer {
   display: flex;
-  height: 22vh;
+  height: 42vh;
   backdrop-filter: blur(10px);
   background-color: #fefefe4c;
   justify-content: space-between;
@@ -60,10 +60,10 @@
     background-image: none;
   }
   .container {
-    height: 1300px;
+    height: 1105vh;
     background-size: 1200px;
   }
   .citiesContainer {
-    height: 150%;
+    height: 62vh;
   }
 }
