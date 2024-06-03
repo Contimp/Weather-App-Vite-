@@ -62,11 +62,10 @@
   .bkg {
     display: none;
   }
-  .container {
-    height: 124vh;
-    background-size: 1800px;
-  }
   .citiesContainer {
-    display: none;
+    height: 8vh;
+  }
+  .container {
+    height: 95vh;
   }
 }
